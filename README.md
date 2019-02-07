@@ -1,6 +1,6 @@
 # MyMovies 
 
-Android app that lists favourite 10  movies,
+Android app that show favourite movies with some features come with it 
 
 ## Getting Started
  You don’t need a backend service to load this list of items.
