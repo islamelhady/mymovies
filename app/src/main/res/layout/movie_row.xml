@@ -10,7 +10,7 @@
     android:layout_height="wrap_content"
     android:layout_alignParentTop="true"
     android:layout_centerHorizontal="true"
-    card_view:cardBackgroundColor="#fff"
+    card_view:cardBackgroundColor="#ffffff"
     card_view:cardElevation="1dp"
     card_view:cardUseCompatPadding="true">
 
@@ -21,10 +21,10 @@
 
         <ImageView
             android:id="@+id/movie_pic"
-            android:layout_width="85dp"
-            android:layout_height="110dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/ic_launcher_foreground" />
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+             />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -68,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/storyMovie"
                 android:textColor="#e49f09"
-                android:textSize="10sp"
+                android:textSize="13sp"
                 android:textStyle="normal" />
 
         </LinearLayout>

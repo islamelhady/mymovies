@@ -1,7 +1,7 @@
 package com.elhady.mymovies.models;
 
 public class Movies {
-    private String movieName,movieRate,movieStory,movieTime;
+    private String movieName, movieRate, movieStory, movieTime;
     private int moviePic;
 
     public Movies(String movieName, String movieRate, String movieStory, String movieTime, int moviePic) {

@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">MYmovies</string>
     <string name="storyMovie">A pair of burglars stumble upon a woman being held captive in a home they intended to rob.</string>
+
+    <string-array name="movieName">
+        <item>A Quiet Place</item>
+        <item>Avengers: Infinity War</item>
+        <item>Bad Samaritan</item>
+        <item>Blockers</item>
+        <item>Rampage</item>
+        <item>Love, Simon</item>
+        <item>Isle of Dogs</item>
+        <item>I Feel Pretty</item>
+    </string-array>
 </resources>
