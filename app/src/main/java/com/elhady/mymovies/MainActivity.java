@@ -32,16 +32,23 @@ public class MainActivity extends AppCompatActivity {
 
         String movRate[] = {"6.1","8.2","7.9","8.1","6.7","4.5","5.6","8.6"};
 
-        String movStory[] = {"In a post-apocalyptic world, a family is forced to live in silence while hiding from monsters with ultra-sensitive hearing.",
-                             "A pair of burglars stumble upon a woman being held captive in a home they intended to rob.",
-                             "Three parents try to stop their daughters from losing their virginity on prom night.",
-                             "Set in Japan, Isle of Dogs follows a boy's odyssey in search of his lost dog.",
-                             "A woman struggling with insecurity wakes from a fall believing she is the most beautiful and capable woman on the planet. Her new confidence empowers her to live fearlessly, but what happens when she realizes her appearance never changed?",
-                             "The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.",
-                             "Simon Spier keeps a huge secret from his family, his friends and all of his classmates: he's gay. When that secret is threatened, Simon must face everyone and come to terms with his identity.",
-                             "When three different animals become infected with a dangerous pathogen, a primatologist and a geneticist team up to stop them from destroying Chicago."};
+        String movStory[] = {getResources().getString(R.string.a_quiet_place),
+                             getResources().getString(R.string.avengers),
+                             getResources().getString(R.string.badsamaritan),
+                             getResources().getString(R.string.blockers),
+                             getResources().getString(R.string.ifeel_pretty),
+                             getResources().getString(R.string.isleof_dogs),
+                             getResources().getString(R.string.love_simon),
+                             getResources().getString(R.string.rampage)};
 
-        String movTime[] = {"149 min","90 min","120 min","149 min","104 min","111 min","109 min","95 min"};
+        String movTime[] = {getResources().getString(R.string.min_a_quiet_place),
+                            getResources().getString(R.string.min_avengers),
+                            getResources().getString(R.string.min_badsamaritan),
+                            getResources().getString(R.string.min_blockers),
+                            getResources().getString(R.string.min_ifeel_pretty),
+                            getResources().getString(R.string.min_isleof_dogs),
+                            getResources().getString(R.string.min_love_simon),
+                            getResources().getString(R.string.min_rampage)};
 
         for (int i = 0; i < movPic.length; i++){
             Movies movies = new Movies(movName[i],movRate[i],movStory[i],movTime[i],movPic[i]);

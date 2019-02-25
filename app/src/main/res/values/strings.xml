@@ -1,6 +1,26 @@
 <resources>
     <string name="app_name">MYmovies</string>
+    <!--movies story-->
     <string name="storyMovie">A pair of burglars stumble upon a woman being held captive in a home they intended to rob.</string>
+    <string name="a_quiet_place">In a post-apocalyptic world, a family is forced to live in silence while hiding from monsters with ultra-sensitive hearing.</string>
+    <string name="avengers">A pair of burglars stumble upon a woman being held captive in a home they intended to rob.</string>
+    <string name="badsamaritan">Three parents try to stop their daughters from losing their virginity on prom night.</string>
+    <string name="blockers">Set in Japan, Isle of Dogs follows a boys odyssey in search of his lost dog.</string>
+    <string name="ifeel_pretty">A woman struggling with insecurity wakes from a fall believing
+        she is the most beautiful and capable woman on the planet. Her new confidence empowers her to live fearlessly, but what happens when she realizes her appearance never changed?</string>
+    <string name="isleof_dogs">The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.</string>
+    <string name="love_simon">Simon Spier keeps a huge secret from his family, his friends and all of his classmates: he is gay. When that secret is threatened, Simon must face everyone and come to terms with his identity.</string>
+    <string name="rampage">When three different animals become infected with a dangerous pathogen, a primatologist and a geneticist team up to stop them from destroying Chicago.</string>
+    <!--movies time-->
+    <string name="min_a_quiet_place">120 min</string>
+    <string name="min_avengers">90 min</string>
+    <string name="min_badsamaritan">111 min</string>
+    <string name="min_blockers">109 min</string>
+    <string name="min_ifeel_pretty">120 min</string>
+    <string name="min_isleof_dogs">190 min</string>
+    <string name="min_love_simon">122 min</string>
+    <string name="min_rampage">140 min</string>
+
 
     <string-array name="movieName">
         <item>A Quiet Place</item>
