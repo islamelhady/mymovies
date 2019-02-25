@@ -21,8 +21,52 @@
     <string name="min_love_simon">122 min</string>
     <string name="min_rampage">140 min</string>
 
+    <integer-array name="movie_pics">
+        <item>@drawable/a_quiet_place</item>
+        <item>@drawable/avengers_infinity_war</item>
+        <item>@drawable/badsamaritan</item>
+        <item>@drawable/blockers</item>
+        <item>@drawable/ifeel_pretty</item>
+        <item>@drawable/isleof_dogs</item>
+        <item>@drawable/love_simon</item>
+        <item>@drawable/rampage</item>
+    </integer-array>
 
-    <string-array name="movieName">
+    <string-array name="movie_rate">
+        <item>6.1</item>
+        <item>8.2</item>
+        <item>4.7</item>
+        <item>7.5</item>
+        <item>6.7y</item>
+        <item>5.6</item>
+        <item>8.6</item>
+        <item>7.9</item>
+    </string-array>
+
+    <string-array name="movie_time">
+        <item>@string/min_a_quiet_place</item>
+        <item>@string/min_avengers</item>
+        <item>@string/min_badsamaritan</item>
+        <item>@string/min_blockers</item>
+        <item>@string/min_ifeel_pretty</item>
+        <item>@string/min_isleof_dogs</item>
+        <item>@string/min_love_simon</item>
+        <item>@string/min_rampage</item>
+    </string-array>
+
+
+    <string-array name="movie_story">
+        <item>@string/a_quiet_place</item>
+        <item>@string/avengers</item>
+        <item>@string/badsamaritan</item>
+        <item>@string/blockers</item>
+        <item>@string/ifeel_pretty</item>
+        <item>@string/isleof_dogs</item>
+        <item>@string/love_simon</item>
+        <item>@string/rampage</item>
+    </string-array>
+
+    <string-array name="movie_name">
         <item>A Quiet Place</item>
         <item>Avengers: Infinity War</item>
         <item>Bad Samaritan</item>
