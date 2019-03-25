@@ -1,10 +1,19 @@
 package com.elhady.mymovies.models;
 
-public class Movies {
-    private String movieName, movieRate, movieStory, movieTime;
-    private int moviePic;
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.PrimaryKey;
+import android.support.annotation.NonNull;
 
-    public Movies(String movieName, String movieRate, String movieStory, String movieTime, int moviePic) {
+@Entity(tableName = "movie_table")
+public class Movies {
+
+    @PrimaryKey
+    @NonNull
+    private String movieName, movieRate, movieStory, movieTime;
+    private int moviePic, id;
+
+
+    public Movies(@NonNull String movieName, @NonNull String movieRate, @NonNull String movieStory, @NonNull String movieTime, int moviePic) {
         this.movieName = movieName;
         this.movieRate = movieRate;
         this.movieStory = movieStory;
@@ -12,35 +21,39 @@ public class Movies {
         this.moviePic = moviePic;
     }
 
+    @NonNull
     public String getMovieName() {
         return movieName;
     }
 
-    public void setMovieName(String movieName) {
+    public void setMovieName(@NonNull String movieName) {
         this.movieName = movieName;
     }
 
+    @NonNull
     public String getMovieRate() {
         return movieRate;
     }
 
-    public void setMovieRate(String movieRate) {
+    public void setMovieRate(@NonNull String movieRate) {
         this.movieRate = movieRate;
     }
 
+    @NonNull
     public String getMovieStory() {
         return movieStory;
     }
 
-    public void setMovieStory(String movieStory) {
+    public void setMovieStory(@NonNull String movieStory) {
         this.movieStory = movieStory;
     }
 
+    @NonNull
     public String getMovieTime() {
         return movieTime;
     }
 
-    public void setMovieTime(String movieTime) {
+    public void setMovieTime(@NonNull String movieTime) {
         this.movieTime = movieTime;
     }
 
@@ -50,5 +63,13 @@ public class Movies {
 
     public void setMoviePic(int moviePic) {
         this.moviePic = moviePic;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

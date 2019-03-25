@@ -11,10 +11,11 @@ import android.widget.TextView;
 import com.elhady.mymovies.R;
 import com.elhady.mymovies.models.Movies;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MovieAdapter extends RecyclerView.Adapter <MovieAdapter.MovieHolder> {
-    private List<Movies> moviesList;
+    private List<Movies> moviesList = new ArrayList<>();;
 
     public MovieAdapter(List<Movies> moviesList) {
         this.moviesList = moviesList;
