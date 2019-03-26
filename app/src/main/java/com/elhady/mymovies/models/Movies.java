@@ -17,6 +17,8 @@ public class Movies {
     private int moviePic;
     private int id;
 
+    public Movies() {
+    }
 
     public Movies(@NonNull String movieName, @NonNull String movieRate, @NonNull String movieStory, @NonNull String movieTime, int moviePic) {
         this.movieName = movieName;

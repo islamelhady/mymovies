@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         toolbar = findViewById(R.id.toolbar);
 
         List<Movies> moviesList = new ArrayList<>();
-        int movPic [] = {R.drawable.a_quiet_place, R.drawable.avengers_infinity_war,
+       /* int movPic [] = {R.drawable.a_quiet_place, R.drawable.avengers_infinity_war,
                          R.drawable.badsamaritan,R.drawable.blockers,R.drawable.ifeel_pretty,
                          R.drawable.isleof_dogs,R.drawable.love_simon,R.drawable.rampage};
 
@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
             Movies movies = new Movies(movName[i],movRate[i],movStory[i],movTime[i],movPic[i]);
             moviesList.add(movies);
         }
+        */
         recyclerView = (RecyclerView) findViewById(R.id.recyler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         movieAdapter = new MovieAdapter(moviesList);

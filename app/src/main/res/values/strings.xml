@@ -2,15 +2,15 @@
     <string name="app_name">MYmovies</string>
     <!--movies story-->
     <string name="storyMovie">A pair of burglars stumble upon a woman being held captive in a home they intended to rob.</string>
-    <string name="a_quiet_place">In a post-apocalyptic world, a family is forced to live in silence while hiding from monsters with ultra-sensitive hearing.</string>
-    <string name="avengers">A pair of burglars stumble upon a woman being held captive in a home they intended to rob.</string>
-    <string name="badsamaritan">Three parents try to stop their daughters from losing their virginity on prom night.</string>
-    <string name="blockers">Set in Japan, Isle of Dogs follows a boys odyssey in search of his lost dog.</string>
-    <string name="ifeel_pretty">A woman struggling with insecurity wakes from a fall believing
+    <string name="story_a_quiet_place">In a post-apocalyptic world, a family is forced to live in silence while hiding from monsters with ultra-sensitive hearing.</string>
+    <string name="story_avengers">A pair of burglars stumble upon a woman being held captive in a home they intended to rob.</string>
+    <string name="story_badsamaritan">Three parents try to stop their daughters from losing their virginity on prom night.</string>
+    <string name="story_blockers">Set in Japan, Isle of Dogs follows a boys odyssey in search of his lost dog.</string>
+    <string name="story_ifeel_pretty">A woman struggling with insecurity wakes from a fall believing
         she is the most beautiful and capable woman on the planet. Her new confidence empowers her to live fearlessly, but what happens when she realizes her appearance never changed?</string>
-    <string name="isleof_dogs">The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.</string>
-    <string name="love_simon">Simon Spier keeps a huge secret from his family, his friends and all of his classmates: he is gay. When that secret is threatened, Simon must face everyone and come to terms with his identity.</string>
-    <string name="rampage">When three different animals become infected with a dangerous pathogen, a primatologist and a geneticist team up to stop them from destroying Chicago.</string>
+    <string name="story_isleof_dogs">The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.</string>
+    <string name="story_love_simon">Simon Spier keeps a huge secret from his family, his friends and all of his classmates: he is gay. When that secret is threatened, Simon must face everyone and come to terms with his identity.</string>
+    <string name="story_rampage">When three different animals become infected with a dangerous pathogen, a primatologist and a geneticist team up to stop them from destroying Chicago.</string>
     <!--movies time-->
     <string name="min_a_quiet_place">120 min</string>
     <string name="min_avengers">90 min</string>
@@ -20,6 +20,26 @@
     <string name="min_isleof_dogs">190 min</string>
     <string name="min_love_simon">122 min</string>
     <string name="min_rampage">140 min</string>
+
+    <!--movies name-->
+    <string name="name_a_quiet_place">A Auiet Place</string>
+    <string name="name_avengers">Avengers</string>
+    <string name="name_badsamaritan">Bad Samaritan</string>
+    <string name="name_blockers">Blockers</string>
+    <string name="name_ifeel_pretty">I Feel Pretty</string>
+    <string name="name_isleof_dogs">Is Leof Dogs</string>
+    <string name="name_love_simon">Love Simon</string>
+    <string name="name_rampage">Rampage</string>
+
+    <!--movies pic-->
+    <item name="pic_a_quiet_place">@drawable/a_quiet_place</item>
+    <item name="pic_avengers">@drawable/avengers_infinity_war</item>
+    <string name="pic_badsamaritan">@string/avengers_infinity_war</string>>
+    <string name="pic_blockers">Blockers</string>
+    <string name="pic_ifeel_pretty">I Feel Pretty</string>
+    <string name="pic_isleof_dogs">Is Leof Dogs</string>
+    <string name="pic_love_simon">Love Simon</string>
+    <string name="pic_rampage">Rampage</string>
 
     <integer-array name="movie_pics">
         <item>@drawable/a_quiet_place</item>
@@ -56,24 +76,24 @@
 
 
     <string-array name="movie_story">
-        <item>@string/a_quiet_place</item>
-        <item>@string/avengers</item>
-        <item>@string/badsamaritan</item>
-        <item>@string/blockers</item>
-        <item>@string/ifeel_pretty</item>
-        <item>@string/isleof_dogs</item>
-        <item>@string/love_simon</item>
-        <item>@string/rampage</item>
+        <item>@string/story_a_quiet_place</item>
+        <item>@string/story_avengers</item>
+        <item>@string/story_badsamaritan</item>
+        <item>@string/story_blockers</item>
+        <item>@string/story_ifeel_pretty</item>
+        <item>@string/story_isleof_dogs</item>
+        <item>@string/story_love_simon</item>
+        <item>@string/story_rampage</item>
     </string-array>
 
     <string-array name="movie_name">
-        <item>A Quiet Place</item>
-        <item>Avengers: Infinity War</item>
-        <item>Bad Samaritan</item>
-        <item>Blockers</item>
-        <item>Rampage</item>
-        <item>Love, Simon</item>
-        <item>Isle of Dogs</item>
-        <item>I Feel Pretty</item>
+        <item>@string/name_a_quiet_place</item>
+        <item>@string/name_avengers</item>
+        <item>@string/name_badsamaritan</item>
+        <item>@string/name_blockers</item>
+        <item>@string/name_ifeel_pretty</item>
+        <item>@string/name_isleof_dogs</item>
+        <item>@string/name_love_simon</item>
+        <item>@string/name_ifeel_pretty</item>
     </string-array>
 </resources>
