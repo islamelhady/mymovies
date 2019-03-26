@@ -1,5 +1,6 @@
 package com.elhady.mymovies.models;
 
+import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
 import android.support.annotation.NonNull;
@@ -7,10 +8,14 @@ import android.support.annotation.NonNull;
 @Entity(tableName = "movie_table")
 public class Movies {
 
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     @NonNull
-    private String movieName, movieRate, movieStory, movieTime;
-    private int moviePic, id;
+    private String movieName;
+    private String movieRate;
+    private String movieStory;
+    private String movieTime;
+    private int moviePic;
+    private int id;
 
 
     public Movies(@NonNull String movieName, @NonNull String movieRate, @NonNull String movieStory, @NonNull String movieTime, int moviePic) {
