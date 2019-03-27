@@ -31,15 +31,7 @@
     <string name="name_love_simon">Love Simon</string>
     <string name="name_rampage">Rampage</string>
 
-    <!--movies pic-->
-    <item name="pic_a_quiet_place">@drawable/a_quiet_place</item>
-    <item name="pic_avengers">@drawable/avengers_infinity_war</item>
-    <string name="pic_badsamaritan">@string/avengers_infinity_war</string>>
-    <string name="pic_blockers">Blockers</string>
-    <string name="pic_ifeel_pretty">I Feel Pretty</string>
-    <string name="pic_isleof_dogs">Is Leof Dogs</string>
-    <string name="pic_love_simon">Love Simon</string>
-    <string name="pic_rampage">Rampage</string>
+
 
     <integer-array name="movie_pics">
         <item>@drawable/a_quiet_place</item>

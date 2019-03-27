@@ -4,15 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#848484"
+    android:background="#fff"
     android:padding="4dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.elhady.mymovies.MainActivity"
     tools:showIn="@layout/activity_main">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyler_view"
+        android:id="@+id/recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        tools:listitem="@layout/movie_row"/>
 
 </RelativeLayout>

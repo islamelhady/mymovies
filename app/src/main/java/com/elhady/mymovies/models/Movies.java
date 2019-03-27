@@ -9,13 +9,14 @@ import android.support.annotation.NonNull;
 public class Movies {
 
     @PrimaryKey(autoGenerate = true)
+    private int id;
     @NonNull
     private String movieName;
     private String movieRate;
     private String movieStory;
     private String movieTime;
     private int moviePic;
-    private int id;
+
 
     public Movies() {
     }

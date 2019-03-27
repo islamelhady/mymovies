@@ -14,29 +14,25 @@ import com.elhady.mymovies.models.Movies;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MovieAdapter extends RecyclerView.Adapter <MovieAdapter.MovieHolder> {
-    private List<Movies> moviesList = new ArrayList<>();;
+public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieHolder> {
+    private List<Movies> moviesList = new ArrayList<>();
 
-    public MovieAdapter(List<Movies> moviesList) {
-        this.moviesList = moviesList;
-    }
 
     @NonNull
     @Override
     public MovieHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
-        View row = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.movie_row,viewGroup, false);
-        MovieHolder holder = new MovieHolder(row);
-        return holder;
+        View row = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.movie_row, viewGroup, false);
+        return new MovieHolder(row);
     }
 
     @Override
     public void onBindViewHolder(@NonNull MovieHolder movieHolder, int position) {
         Movies movie = moviesList.get(position);
-        movieHolder.nameMov.setText(movie.getMovieName());
-        movieHolder.rateMov.setText(movie.getMovieRate());
-        movieHolder.timeMov.setText(movie.getMovieTime());
-        movieHolder.storyMov.setText(movie.getMovieStory());
-        movieHolder.picMov.setImageResource(movie.getMoviePic());
+        movieHolder.textViewName.setText(movie.getMovieName());
+        movieHolder.textViewRate.setText(movie.getMovieRate());
+        movieHolder.textViewTime.setText(movie.getMovieTime());
+        movieHolder.textViewStory.setText(movie.getMovieStory());
+        movieHolder.imageViewPic.setImageResource(movie.getMoviePic());
     }
 
     @Override
@@ -44,17 +40,25 @@ public class MovieAdapter extends RecyclerView.Adapter <MovieAdapter.MovieHolder
         return moviesList.size();
     }
 
-    public class MovieHolder extends RecyclerView.ViewHolder{
-        public TextView nameMov,rateMov,timeMov,storyMov;
-        public ImageView picMov;
+    public void setMoviesList(List<Movies> moviesList) {
+        this.moviesList = moviesList;
+        notifyDataSetChanged();
+    }
+
+    public class MovieHolder extends RecyclerView.ViewHolder {
+        private TextView textViewName;
+        private TextView textViewRate;
+        private TextView textViewTime;
+        private TextView textViewStory;
+        private ImageView imageViewPic;
 
         public MovieHolder(@NonNull View itemView) {
             super(itemView);
-            nameMov  = itemView.findViewById(R.id.movie_name);
-            rateMov  = itemView.findViewById(R.id.movie_rate);
-            timeMov  = itemView.findViewById(R.id.movie_time);
-            storyMov = itemView.findViewById(R.id.movie_story);
-            picMov   = itemView.findViewById(R.id.movie_pic);
+            textViewName = itemView.findViewById(R.id.text_view_name);
+            textViewRate = itemView.findViewById(R.id.text_view_rate);
+            textViewTime = itemView.findViewById(R.id.text_view_time);
+            textViewStory = itemView.findViewById(R.id.text_view_story);
+            imageViewPic = itemView.findViewById(R.id.image_view_pic);
         }
     }
 

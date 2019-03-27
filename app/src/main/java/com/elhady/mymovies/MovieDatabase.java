@@ -21,7 +21,7 @@ public abstract class MovieDatabase extends RoomDatabase {
     public abstract MovieDao movieDao();
 
     private static MovieDatabase instance;
-   // private static Context context;
+
 
     public static synchronized MovieDatabase getInstance(Context context) {
         if (instance == null) {
@@ -39,38 +39,20 @@ public abstract class MovieDatabase extends RoomDatabase {
         public void onCreate(@NonNull SupportSQLiteDatabase db) {
             super.onCreate(db);
             new PopulateDbAsyncTask(instance).execute();
-            //new PopulateDbAsyncTask(context).execute();
         }
     };
 
     private static class PopulateDbAsyncTask extends AsyncTask<Void, Void, Void> {
         private MovieDao movieDao;
-        String movName[], movRate[], movStory[], movTime[];
-        int movPic[];
+
 
         public PopulateDbAsyncTask(MovieDatabase database) {
             movieDao = database.movieDao();
         }
 
-        public PopulateDbAsyncTask(Context context) {
-            movName = context.getResources().getStringArray(R.array.movie_name);
-            movRate = context.getResources().getStringArray(R.array.movie_rate);
-            movStory = context.getResources().getStringArray(R.array.movie_story);
-            movTime = context.getResources().getStringArray(R.array.movie_time);
-            movPic = context.getResources().getIntArray(R.array.movie_pics);
-
-        }
-
         @Override
         protected Void doInBackground(Void... voids) {
-
-            List<Movies> moviesList = new ArrayList<>();
-            Movies movies = new Movies();
-
-            for (int i = 0; i < movPic.length; i++) {
-                movieDao.insert(new Movies(movName[i], movRate[i], movStory[i], movTime[i], movPic[i]));
-                moviesList.add(movies);
-            }
+            movieDao.insert(new Movies("sdf","asdf","asdf","asdf",R.drawable.badsamaritan));
             return null;
         }
     }
