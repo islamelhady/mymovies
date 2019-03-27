@@ -18,4 +18,7 @@ public interface MovieDao {
 
     @Query("SELECT * from movie_table ORDER BY movieRate ASC")
     LiveData<List<Movies>> getAllMovies();
+
+    @Query("DELETE FROM movie_table")
+    void deleteAll();
 }

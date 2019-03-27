@@ -21,7 +21,7 @@ public class MovieRepository {
         allMovies = movieDao.getAllMovies();
     }
 
-    public void insert (Movies movies){
+    public void insert(Movies movies) {
         new insertMovieAsycTask(movieDao).execute(movies);
     }
 
@@ -29,10 +29,10 @@ public class MovieRepository {
         return allMovies;
     }
 
-    private static class insertMovieAsycTask extends AsyncTask<Movies,Void,Void>{
+    private static class insertMovieAsycTask extends AsyncTask<Movies, Void, Void> {
         private MovieDao movieDao;
 
-        public insertMovieAsycTask(MovieDao movieDao) {
+        insertMovieAsycTask(MovieDao movieDao) {
             this.movieDao = movieDao;
         }
 
