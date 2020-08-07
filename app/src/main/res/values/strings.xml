@@ -1,91 +1,70 @@
 <resources>
-    <string name="app_name">MYmovies</string>
-    <!--movies story-->
-    <string name="storyMovie">A pair of burglars stumble upon a woman being held captive in a home they intended to rob.</string>
-    <string name="story_a_quiet_place">In a post-apocalyptic world, a family is forced to live in silence while hiding from monsters with ultra-sensitive hearing.</string>
-    <string name="story_avengers">A pair of burglars stumble upon a woman being held captive in a home they intended to rob.</string>
-    <string name="story_badsamaritan">Three parents try to stop their daughters from losing their virginity on prom night.</string>
-    <string name="story_blockers">Set in Japan, Isle of Dogs follows a boys odyssey in search of his lost dog.</string>
-    <string name="story_ifeel_pretty">A woman struggling with insecurity wakes from a fall believing
-        she is the most beautiful and capable woman on the planet. Her new confidence empowers her to live fearlessly, but what happens when she realizes her appearance never changed?</string>
-    <string name="story_isleof_dogs">The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.</string>
-    <string name="story_love_simon">Simon Spier keeps a huge secret from his family, his friends and all of his classmates: he is gay. When that secret is threatened, Simon must face everyone and come to terms with his identity.</string>
-    <string name="story_rampage">When three different animals become infected with a dangerous pathogen, a primatologist and a geneticist team up to stop them from destroying Chicago.</string>
-    <!--movies time-->
-    <string name="min_a_quiet_place">120 min</string>
-    <string name="min_avengers">90 min</string>
-    <string name="min_badsamaritan">111 min</string>
-    <string name="min_blockers">109 min</string>
-    <string name="min_ifeel_pretty">120 min</string>
-    <string name="min_isleof_dogs">190 min</string>
-    <string name="min_love_simon">122 min</string>
-    <string name="min_rampage">140 min</string>
+    <string name="app_name">Filme</string>
 
-    <!--movies name-->
-    <string name="name_a_quiet_place">A Auiet Place</string>
-    <string name="name_avengers">Avengers</string>
-    <string name="name_badsamaritan">Bad Samaritan</string>
-    <string name="name_blockers">Blockers</string>
-    <string name="name_ifeel_pretty">I Feel Pretty</string>
-    <string name="name_isleof_dogs">Is Leof Dogs</string>
-    <string name="name_love_simon">Love Simon</string>
-    <string name="name_rampage">Rampage</string>
+    <string name="movie_title">The Secret Life of Pets</string>
+    <string name="movie_overview">The quiet life of a terrier named Max is upended when his owner
+        takes in Duke, a stray whom Max instantly dislikes.</string>
+    <string name="tagline">Every fairy tale has a dark side.</string>
+    <string name="synopsis">Synopsis</string>
+    <string name="movie_synopsis_large">When a wounded Christian Grey tries to entice a cautious Ana Steele back into his life, she demands a new arrangement before she will give him another chance. As the two begin to build trust and find stability, shadowy figures from Christian’s past start to circle the couple, determined to destroy their hopes for a future together.</string>
+    <string name="trailers">Trailers</string>
+    <string name="trailer_name">Fifty Shades Darker - Official Trailer 2</string>
+    <string name="youtube">YouTube</string>
+    <string name="site">Site : </string>
+    <string name="quality">Quality : </string>
+    <string name="similar_movies">Similar Movies</string>
+    <string name="rating_value">4.5</string>
+    <string name="movie_time">1h 58 min</string>
+    <string name="lead_cast">Lead Cast</string>
+    <string name="actor_name">Jamie Dornan</string>
+    <string name="reviewer_name">Ganesan</string>
+    <string name="reviewer_review">Movie was quite awesome</string>
+    <string name="reviews">Reviews</string>
+    <string name="share">Share</string>
+    <string name="vote_average_value">9.1 / 10</string>
+    <string name="vote_count_value">21976 votes</string>
+    <string name="shared_poster">shared_poster</string>
+    <string name="browse">Browse</string>
+    <string name="movies">Movies</string>
+    <string name="tv_shows">TV Shows</string>
+    <string name="other">Other</string>
+    <string name="settings">Settings</string>
+    <string name="info_and_feedback">About</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_top_rated">Top Rated</string>
+    <string name="title_popular">Popular</string>
+    <string name="title_on_the_air">On The Air</string>
+    <string name="title_air_shows">Air Shows</string>
+    <string name="title_airing_today">Airing Today</string>
+    <string name="title_trending">Trending</string>
+    <string name="title_latest">Latest</string>
+    <string name="app_version">Version 1.0.0</string>
 
+    <string name="app_review_title">Review on Google Play</string>
+    <string name="app_review_description">If you like Filme, please click here to rate it on the Play Store</string>
 
+    <string name="app_feedback_title">Send feedback</string>
+    <string name="app_feedback_description">I would love to hear from you about the application. Click here to send me your thoughts.</string>
 
-    <integer-array name="movie_pics">
-        <item>@drawable/a_quiet_place</item>
-        <item>@drawable/avengers_infinity_war</item>
-        <item>@drawable/badsamaritan</item>
-        <item>@drawable/blockers</item>
-        <item>@drawable/ifeel_pretty</item>
-        <item>@drawable/isleof_dogs</item>
-        <item>@drawable/love_simon</item>
-        <item>@drawable/rampage</item>
-    </integer-array>
+    <string name="app_developer_title">Developer</string>
+    <string name="app_developer_description">Islam Elhady</string>
 
-    <string-array name="movie_rate">
-        <item>6.1</item>
-        <item>8.2</item>
-        <item>4.7</item>
-        <item>7.5</item>
-        <item>6.7y</item>
-        <item>5.6</item>
-        <item>8.6</item>
-        <item>7.9</item>
-    </string-array>
+    <string name="app_copyright_title">Copyright</string>
+    <string name="app_copyright_description">All copyrights belong to their respective owners.</string>
 
-    <string-array name="movie_time">
-        <item>@string/min_a_quiet_place</item>
-        <item>@string/min_avengers</item>
-        <item>@string/min_badsamaritan</item>
-        <item>@string/min_blockers</item>
-        <item>@string/min_ifeel_pretty</item>
-        <item>@string/min_isleof_dogs</item>
-        <item>@string/min_love_simon</item>
-        <item>@string/min_rampage</item>
-    </string-array>
+    <string name="app_tmdb_title">The Movie Database</string>
+    <string name="app_tmdb_description">The product uses TMDb API but is not endorsed or certified by TMDb</string>
 
+    <string name="activity_title_feedback">About</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="nav_header_title">Filme</string>
+    <string name="nav_header_subtitle">islam.elhady@outlook.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_share">Share</string>
 
-    <string-array name="movie_story">
-        <item>@string/story_a_quiet_place</item>
-        <item>@string/story_avengers</item>
-        <item>@string/story_badsamaritan</item>
-        <item>@string/story_blockers</item>
-        <item>@string/story_ifeel_pretty</item>
-        <item>@string/story_isleof_dogs</item>
-        <item>@string/story_love_simon</item>
-        <item>@string/story_rampage</item>
-    </string-array>
-
-    <string-array name="movie_name">
-        <item>@string/name_a_quiet_place</item>
-        <item>@string/name_avengers</item>
-        <item>@string/name_badsamaritan</item>
-        <item>@string/name_blockers</item>
-        <item>@string/name_ifeel_pretty</item>
-        <item>@string/name_isleof_dogs</item>
-        <item>@string/name_love_simon</item>
-        <item>@string/name_ifeel_pretty</item>
-    </string-array>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
 </resources>
