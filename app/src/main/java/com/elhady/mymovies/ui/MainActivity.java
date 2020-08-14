@@ -22,6 +22,7 @@ import android.view.MenuItem;
 import com.elhady.mymovies.R;
 import com.elhady.mymovies.fragment.popular.PopularMovieFragment;
 import com.elhady.mymovies.fragment.toprated.TopRatedMovieFragment;
+import com.elhady.mymovies.fragment.upcoming.UpComingMovieFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -55,8 +56,9 @@ public class MainActivity extends AppCompatActivity implements
 
     private void setupViewPager(ViewPager viewpager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new PopularMovieFragment(), "Most Popular");
+        adapter.addFragment(new PopularMovieFragment(), "Popular");
         adapter.addFragment(new TopRatedMovieFragment(), "Top Rated");
+        adapter.addFragment(new UpComingMovieFragment(), "Up Coming");
         viewpager.setAdapter(adapter);
     }
 
